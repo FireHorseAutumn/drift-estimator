@@ -11,7 +11,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 find_package(CUDAToolkit REQUIRED)
-find_package(Eigen3 3.4 REQUIRED NO_MODULE)
+find_package(Eigen3 REQUIRED NO_MODULE)
 
 add_library(de INTERFACE)
 target_include_directories(de INTERFACE
